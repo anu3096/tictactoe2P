@@ -1,0 +1,16 @@
+
+ Author: Anugesh Balasubramaniam
+ Date: Dec 12, 2014 
+ 
+ Tic Tac Toe (2 Player)
+ * This game allows 2 human players to play
+ * tic tac toe against each other.
+
+ Made for and tested on Linux & Unix systems.
+ * This program is meant to be played in terminal
+
+ Compile:
+	make
+
+ Execute:
+	./play
