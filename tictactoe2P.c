@@ -37,7 +37,6 @@ int checkPosition(char selectedPos){
 	if (selectedPos != ' '){
 		return 1;
 	}
-	
 	return 0;
 }
 
@@ -133,60 +132,60 @@ int checkGameOver(){
 				noSpaces = 1;
 			}
 			
-			if ((i == 0) && (board[i][j] == 'X')){
+			if ((i == 0) && (board[i][j] == player1)){
 				totalRow1 = totalRow1 + 3;
 				if (j == 2){
 					totalDiag2 = totalDiag2 + 3;
 				}
-			}else if ((i == 0) && (board[i][j] == 'O')){
+			}else if ((i == 0) && (board[i][j] == player2)){
 				totalRow1 = totalRow1 + 5;
 				if (j == 2){
 					totalDiag2 = totalDiag2 + 5;
 				}
 			}
 			
-			if ((i == 1) && (board[i][j] == 'X')){
+			if ((i == 1) && (board[i][j] == player1)){
 				totalRow2 = totalRow2 + 3;
-			}else if ((i == 1) && (board[i][j] == 'O')){
+			}else if ((i == 1) && (board[i][j] == player2)){
 				totalRow2 = totalRow2 + 5;
 			}
 			
-			if ((i == 2) && (board[i][j] == 'X')){
+			if ((i == 2) && (board[i][j] == player1)){
 				totalRow3 = totalRow3 + 3;
 				if (j == 0){
 					totalDiag2 = totalDiag2 + 3;
 				}
-			}else if ((i == 2) && (board[i][j] == 'O')){
+			}else if ((i == 2) && (board[i][j] == player2)){
 				totalRow3 = totalRow3 + 5;
 				if (j == 0){
 					totalDiag2 = totalDiag2 + 5;
 				}
 			}
 			
-			if ((j == 0) && (board[i][j] == 'X')){
+			if ((j == 0) && (board[i][j] == player1)){
 				totalCol1 = totalCol1 + 3;
-			}else if ((j == 0) && (board[i][j] == 'O')){
+			}else if ((j == 0) && (board[i][j] == player2)){
 				totalCol1 = totalCol1 + 5;
 			}
 			
-			if ((j == 1) && (board[i][j] == 'X')){
+			if ((j == 1) && (board[i][j] == player1)){
 				totalCol2 = totalCol2 + 3;
-			}else if ((j == 1) && (board[i][j] == 'O')){
+			}else if ((j == 1) && (board[i][j] == player2)){
 				totalCol2 = totalCol2 + 5;
 			}
 			
-			if ((j == 2) && (board[i][j] == 'X')){
+			if ((j == 2) && (board[i][j] == player1)){
 				totalCol3 = totalCol3 + 3;
-			}else if ((j == 2) && (board[i][j] == 'O')){
+			}else if ((j == 2) && (board[i][j] == player2)){
 				totalCol3 = totalCol3 + 5;
 			}
 			
-			if ((i == j) && (board[i][j] == 'X')){
+			if ((i == j) && (board[i][j] == player1)){
 				totalDiag1 = totalDiag1 + 3;
 				if (i == 1){
 					totalDiag2 = totalDiag2 + 3;
 				}
-			}else if ((i == j) && (board[i][j] == 'O')){
+			}else if ((i == j) && (board[i][j] == player2)){
 				totalDiag1 = totalDiag1 + 5;
 				if (i == 1){
 					totalDiag2 = totalDiag2 + 5;
@@ -210,7 +209,7 @@ int checkGameOver(){
 	if (noSpaces == 0){
 		return 2;
 	}
-	
+    
 	return 3;
 }
 
